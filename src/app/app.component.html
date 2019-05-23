@@ -1,0 +1,15 @@
+
+
+<h1>{{title}}</h1>
+
+<p><strong>Name: </strong> <input matInput [(ngModel)]="user.name"></p>
+<p><strong>Hobbies: </strong> <input [(ngModel)]="user.hobbies"></p>
+
+<button (click)="saveData()" mat-raised-button>SAVE</button>
+
+<p><strong>Data in JSON format</strong></p>
+<pre>{{user | json}}</pre>
+
+
+
+
